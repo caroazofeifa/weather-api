@@ -1,0 +1,64 @@
+//-NAV NOTE
+.navNote{
+  background-color:#2b4f63; 
+  height: 10vh;
+  width: 100%;
+}
+.navNote__ul{
+  display: flex;
+}
+.navNote__image{
+  height: 4rem;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-bottom: 10px; 
+  width: 3rem;
+}
+.navNote__button{
+  background-color: transparent;
+  border: 0px;
+  margin: 0px;
+  display: relative;
+}
+.navNote__input{
+  width: 17rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .navNote{
+    height: 14vh;
+    justify-content: flex-start;
+  }
+  .navNote__input{
+    width: 10.5rem;
+  }
+  .navNote__image{
+    height: 2rem;
+    margin: 2.5rem 0.7rem 1rem 0rem;
+    width: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 991px) {
+  .navNote{
+    justify-content: flex-start;
+  }
+  .navNote__image{
+    height: 3rem;
+    margin: 2.5rem 0.8rem 1rem 0rem;
+    width: 4rem;
+  }
+  .navNote__input{
+    width: 10rem;
+  }
+  .navNote{
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+.navNote{
+  justify-content: flex-start;
+  }
+}

@@ -1,0 +1,513 @@
+.container-fluid{
+  padding: 0px;
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.cols {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+ul{
+  list-style: none;
+  margin: 0;
+}
+
+//-- PUSH CARO
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+button:focus {
+  outline:0;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+  outline: none;
+  border: 0px;
+}
+body{
+  background-color: #454741;
+}
+.form-control{
+  margin: 2rem;
+}
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainViewOpaque{
+  opacity: 0.5;
+}
+//MENU AZUL
+.section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.sideNav{
+  background-color:#2b4f63; 
+  height: 100vh;
+  width: 100%;
+}
+.sideNav__button{
+  background-color: transparent;
+  border: 0px;
+  display: relative;
+  margin: 5rem;
+  padding: 1rem;
+}
+.sideNav__image{
+  height: 5rem;
+  margin: 0px;
+  width: 7rem;
+}
+img:hover{
+  background-color:#897044;
+  border-radius: 4px
+}
+//DROPDOWN
+.notesDropDown{
+  background-color: #454741;
+}
+.notesDropDown__dropdown{
+  cursor: hand;
+  height: 3.5rem;
+  border-radius:4px;
+  margin: 2.5rem;
+  margin-left: 15px;
+  width: 20%;
+}
+.notesDropDrown__button{
+  background-color: transparent;
+  border: 0px;
+  display: relative;
+  float: right;
+  margin: 0.2rem;
+  padding: 1rem;
+}
+.notesDropDrown__img{
+  height: 5rem;
+  margin: 0px;
+  width: 7rem;
+}
+//NOTES --ACA VAN LOS THUMBNAILS
+.notes{
+  background-color: #454741;
+  min-height: calc(100vh-100px);
+  //min-height: 100vh;
+  width: 100%
+}
+.thumbnail {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+.note__button {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 4px;
+}
+.note__image {
+  width: 2.7rem;
+  height: 2.7rem;
+  padding: 0;
+}
+.p--shorter {
+  height:8.4rem;
+  line-height:20px;
+  overflow:hidden;
+  word-wrap: break-word;
+  word-break:break-all;
+  overflow-wrap:hyphenate;
+}
+
+//NOTES MODAL--EDITOR DE NOTAS
+.notesModal{
+  border: 0px solid transparent ;
+  height: 30vh;
+  left: 20%;
+  position: absolute;
+  text-align: center;  
+  transition: ease 2s;
+  top: -1000vh;
+  width: 60%;
+  -webkit-transition: ease 2s;
+  z-index: 2;
+}
+.notesModal--show{
+  top: 20vh;
+}
+//-NAV NOTE
+.navNote{
+  background-color:#2b4f63; 
+  height: 10vh;
+  width: 100%;
+}
+.navNote__ul{
+  display: flex;
+}
+.navNote__image{
+  height: 4rem;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-bottom: 10px; 
+  width: 3rem;
+}
+.navNote__button{
+  background-color: transparent;
+  border: 0px;
+  margin: 0px;
+  display: relative;
+}
+.navNote__input{
+  width: 17rem;
+}
+//-NAV EDITOR
+.navEditor{
+  background-color:#5b5e56;
+  height: 11vh;
+  width: 100%;
+}
+.navEditor__ul{
+  display: flex;
+}
+.navEditor__image{
+  height: 2.2rem;
+  cursor: default;
+  margin: 2rem 0rem 2rem 2rem;
+  width: 1.7rem;
+}
+.navEditor__button{
+  cursor: default;
+  background-color: transparent;
+  border: 0px;
+  margin: 0px;
+}
+.navEditor__dropdown{
+  width: 13.3rem;
+  height: 3.5rem;
+  border-radius:4px;
+  margin: 2rem;
+  cursor: hand;
+}
+.navEditor__input{
+  width: 10rem;
+}
+//-TEXT AREA
+.textArea{
+  background-color:#fff;
+  font-weight: 100%
+}
+.textArea__input{
+  width: 100%;
+  border: none;
+}
+.textArea{
+  border-left: 1px solid #288bc9;
+  border-right: 1px solid #288bc9;
+  border-bottom: 1px solid #288bc9;
+}
+//MENU DE NOTEBOOKS
+.sectionFile{
+  background-color:#C9C9C9;
+  top: 0vh;
+  left: -1500%;
+  width: 25%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  border: 1px;
+  -webkit-transition: ease 2s;
+  transition: ease 2s;
+  text-align: center;
+  border: 1px solid #C9C9C9;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.sectionFile--show{
+  left: 8.3%;
+}
+.sectionFile__image{
+  width: 2rem;
+  height: 3rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+.sectionFile__button{
+  background-color: transparent;
+  border: 0px;
+}
+.sectionFile__button--margin{
+  margin: 20px;
+}
+.notebooksList{
+  list-style-type: none;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.sectionFiles__input{
+  width: 100%;
+  margin: 1rem 1rem 0 1rem;
+}
+.sectionFile__list{
+  color: black;
+  //background-color: #66a5ca;
+  border-color: transparent;
+  margin: 0px;
+  text-align: left;
+}
+.sectionFile__li{
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+// TAGS
+.tagFile{
+  background-color:#C9C9C9;
+  top: 0vh;
+  left: -1500%;
+  width: 25%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  border: 1px;
+  -webkit-transition: ease 2s;
+  transition: ease 2s;
+  text-align: center;
+  border: 1px solid #C9C9C9;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.tagFile--show{
+  left: 8.3%;
+}
+.tagFile__image{
+  width: 2rem;
+  height: 3rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+.tagFile__button{
+  background-color: transparent;
+  border: 0px;
+}
+.tagFile__button--margin{
+  margin: 20px;
+}
+.tagsList{
+  list-style-type: none;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.tagFile__input{
+  width: 100%;
+  margin: 1rem 1rem 0 1rem;
+}
+.tagFile__list{
+  color: black;
+  //background-color: #66a5ca;
+  border-color: transparent;
+  margin: 0px;
+  text-align: left;
+}
+.tagFile__li{
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+//MEDIA QUERIES
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .sideNav{
+    height: 10vh;
+  }
+  .sideNav__image{
+    height: 3.5rem;
+    width: 4rem;
+  }
+  .sideNav__button{
+    margin: 1.4rem 1.4rem 1.2rem 1.3rem;
+    padding: 0.3rem;
+  }
+  ul{
+    display: flex;
+  }
+  .notesModal{
+    left: 0%;
+    width: 100%;
+  }
+  .navNote__input{
+    width: 10.5rem;
+  }
+  .navNote__image{
+    height: 2rem;
+    margin: 2.5rem 0.7rem 1rem 0rem;
+    width: 2.5rem;
+  }
+ .navEditor__image{
+    height: 1.2rem;
+    cursor: default;
+    margin: 1rem 0rem 1rem 1rem;
+    width: 0.3rem;
+  }
+  .navEditor__input{
+    width: 7rem;
+  } 
+  .navEditor__dropdown{
+    width: 10.5rem;
+    height: 3.5rem;
+    border-radius:4px;
+    margin: 1rem;
+    cursor: hand;
+  }
+  .navEditor__image{
+    height: 1.1rem;
+    cursor: default;
+    margin: 1rem 0rem 1rem 1rem;
+    width: 1.5rem;
+  }
+  .navEditor{
+    height: 14vh;
+  }
+  .navEditor__ul{
+    justify-content: flex-start;
+  }
+  .navNote{
+    height: 14vh;
+    justify-content: flex-start;
+  }
+  .sectionFile--show{
+    top: 11vh;
+    width: 100%;
+    left:0;
+  }
+  .sectionFile__image{
+    height: 5rem;
+    margin: 0rem 1.2rem 0rem 0rem;
+    width: 3rem;
+  }
+  .tagFile--show{
+    top: 11vh;
+    width: 100%;
+    left:0;
+  }
+  .tagFile__image{
+    height: 5rem;
+    margin: 0rem 1.2rem 0rem 0rem;
+    width: 3rem;
+  }     
+  .notesDropDown__dropdown{
+    width: 55%;
+  }
+  .notesDropDrown__img{
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 991px) {
+  .sideNav{
+    height: 13vh;
+    text-align: end;
+  }
+  .sideNav__image{
+    height: 4.5rem;
+    width: 5rem;
+  }
+  .sideNav__button{
+    margin: 1.7rem 1.5em 1rem 2rem;
+    padding: 0.5rem;
+  }
+  .section{
+    align-items: center;
+    justify-content: flex-end;
+   }
+  ul{
+    display: flex;
+  }
+  .notesModal{
+    width: 90%;
+    left: 5%;
+   }
+  .navNote__image{
+    height: 3rem;
+    margin: 2.5rem 0.8rem 1rem 0rem;
+    width: 4rem;
+  }
+ .navEditor__image{
+    height: 1.2rem;
+    cursor: default;
+    margin: 1rem 0rem 1rem 1rem;
+    width: 1.5rem;
+  }
+  .navNote__input{
+    width: 10rem;
+  }
+  .navEditor__dropdown{
+    width: 10rem;
+    height: 3.5rem;
+    border-radius:4px;
+    margin: 1rem;
+    cursor: hand;
+  }
+  .navEditor__input{
+    width: 8rem;
+  }
+  .navEditor__ul{
+    justify-content: flex-start;
+   }
+  .navNote{
+    justify-content: flex-start;
+   }
+  .sectionFile{
+    top: 14vh;
+    width: 83.4%;
+   }
+  .sectionFile__image{
+    height: 5.5rem;
+    margin: 0rem 1.5rem 0rem 0rem;
+    width: 3.5rem;
+  }
+  .tagFile{
+    top: 14vh;
+    width: 83.4%;
+   }
+  .tagFile__image{
+    height: 5.5rem;
+    margin: 0rem 1.5rem 0rem 0rem;
+    width: 3.5rem;
+  }
+  .notesDropDown__dropdown{
+   width: 40%;
+  }
+}
+/* Desktop Styles */
+@media only screen and (min-width: 992px) {
+  .sideNav__button {
+    margin: 3rem 0rem 3rem 0.2rem;
+    padding: 1rem 0rem 1rem 0.2rem;
+  }
+  .sideNav{
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 8.4%;
+   }
+   .section{
+    align-items: flex-start;
+    justify-content: center;
+   }
+   .navEditor__ul{
+    justify-content: flex-start;
+   }
+   .navNote{
+      justify-content: flex-start;
+   }
+}

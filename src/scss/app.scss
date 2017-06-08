@@ -1,0 +1,80 @@
+//-- PUSH CARO
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+button:focus {
+  outline:0;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+  outline: none;
+  border: 0px;
+}
+body{
+  background-color: #454741;
+}
+ul{
+  list-style: none;
+  margin: 0;
+}
+h6 {
+  font-size: 1.7rem;
+}
+button:hover{
+  background-color:#897044;
+  border-radius: 4px
+}
+.container-fluid{
+  padding: 0px;
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.cols {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.form-control{
+  margin: 2rem;
+}
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainViewOpaque{
+  opacity: 0.5;
+}
+.section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+//MEDIA QUERIES
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  ul{
+    display: flex;
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 991px) {
+  .section{
+    align-items: center;
+    justify-content: flex-end;
+   }
+  ul{
+    display: flex;
+  }
+}
+/* Desktop Styles */
+@media only screen and (min-width: 992px) {
+   .section{
+    align-items: flex-start;
+    justify-content: center;
+   }
+}

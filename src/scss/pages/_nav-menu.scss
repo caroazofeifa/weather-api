@@ -1,0 +1,67 @@
+//MENU AZUL
+.sideNav{
+  background-color:#2b4f63; 
+  height: 100vh;
+  width: 100%;
+}
+.sideNav__button{
+  background-color: transparent;
+  border: 0px;
+  display: relative;
+  margin: 5rem;
+  padding: 1rem;
+}
+.sideNav__image{
+  height: 5rem;
+  margin: 0px;
+  width: 7rem;
+}
+
+//MEDIA QUERIES
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+    .sideNav{
+    height: 10vh;
+    background-color: red;
+  }
+  .sideNav__image{
+    height: 3.5rem;
+    width: 4rem;
+  }
+  .sideNav__button{
+    margin: 1.4rem 1.4rem 1.2rem 1.3rem;
+    padding: 0.3rem;
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 501px) and (max-width: 991px) {
+  .sideNav{
+    height: 13vh;
+    text-align: end;
+    background-color: yellow;
+  }
+  .sideNav__image{
+    height: 4.5rem;
+    width: 5rem;
+  }
+  .sideNav__button{
+    margin: 1.7rem 1.5em 1rem 2rem;
+    padding: 0.5rem;
+  }
+}
+/* Desktop Styles */
+@media only screen and (min-width: 992px) {
+  .sideNav__button {
+    margin: 3rem 0.2rem 3rem 0.2rem;
+    padding: 1rem 0.2rem 1rem 0.2rem;
+  }
+  .sideNav{
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 8.4%;
+    background-color: blue;
+   }
+}
+
