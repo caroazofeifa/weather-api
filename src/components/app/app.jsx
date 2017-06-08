@@ -7,6 +7,7 @@ const reactRouter = require('react-router-dom');
 const Route = reactRouter.Route;
 // const Link = reactRouter.Link;
 const AppContainer = require('../../containers/AppContainer');
+//import AppContainer from '../../containers/AppContainer';
 
 class App extends React.Component {
   render() {
