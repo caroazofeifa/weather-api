@@ -47,7 +47,7 @@ class AppContainer extends React.Component {
     return (
       <div>
         <div className='col-md-1 cols'>
-          <h1>HOLI!!</h1>
+          <h1>You are here:</h1>
           <Demo
             stateApp={ this.state }
             getAllNotes={ this.getAllNotes.bind(this) }

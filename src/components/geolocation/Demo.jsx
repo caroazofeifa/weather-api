@@ -2,16 +2,18 @@ import React from 'react';
 import axios from 'axios';
 import { geolocated } from 'react-geolocated';
 
-const serverNotes = 'http://api.openweathermap.org/data/2.5/forecast?id=596826&APPID=e5847f111e91d75487366d09345ec504';
+import Weather from '../weather/Weather';
 
-let serverC = 'http://api.openweathermap.org/data/2.5/forecast?id=596826&APPID=e5847f111e91d75487366d09345ec504';
-//const serverCoord='http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}'
+const serverNotes = 'http://api.openweathermap.org/data/2.5/forecast?id=596826&APPID=e5847f111e91d75487366d09345ec504';
+let serverCoord = 'http://api.openweathermap.org/data/2.5/forecast?id=596826&APPID=e5847f111e91d75487366d09345ec504';
+
 class Demo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       latitudeD: 0,
       longitudeD: 0,
+      showData: false,
       weather: [],
     };
     this.updateCoords = this.updateCoords.bind(this);
@@ -28,16 +30,12 @@ class Demo extends React.Component {
       });
   }
   updateCoords() {
-    console.log('axios!!!!!!!!!!call');
-    // const la = this.state.latitudeD;
-    // const lo = this.state.longitudeD;
     // const serverC = `http://api.openweathermap.org/data/2.5/weather?lat=${la}&lon=${lo}`;
     axios
-      .get(serverC)
+      .get(serverCoord)
       .then(res => {
-        console.log(serverC);
-        console.log(res.data);
         this.setState({ weather: res.data });
+        this.setState({ showData: true });
       });
     // this.props.updateLatitude(this.state.latitudeD);
     // this.props.updateLongitude(this.state.longitudeD);
@@ -52,15 +50,15 @@ class Demo extends React.Component {
             (
             this.state.latitudeD = this.props.coords.latitude,
             this.state.longitudeD = this.props.coords.longitude,
-            serverC = `http://api.openweathermap.org/data/2.5/weather?lat=${this.props.coords.latitude}&lon=${this.props.coords.longitude}&APPID=e5847f111e91d75487366d09345ec504`
+            serverCoord = `http://api.openweathermap.org/data/2.5/weather?lat=${this.props.coords.latitude}&lon=${this.props.coords.longitude}&APPID=e5847f111e91d75487366d09345ec504`
             )
         : <div>Getting the location data&hellip; </div>;
     return (
       <div>
         <h2> { this.state.latitudeD } </h2>
         <h2> { this.state.longitudeD } </h2>
-        <button onClick={ this.updateCoords } />
-        <h1>Bye</h1>
+        <button onClick={ this.updateCoords } >Get current weather</button>
+        { this.state.showData ? <Weather stateDemo={ this.state } /> : <div></div> }
       </div>
     );
   }
