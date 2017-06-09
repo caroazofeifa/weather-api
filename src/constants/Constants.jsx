@@ -1,0 +1,18 @@
+export const SERVER_COORD='http://api.openweathermap.org/data/2.5/weather?';
+export const SERVER='http://api.openweathermap.org/data/2.5/weather?';
+export const API_KEY='APPID=03339713f9fa747172d4a1c49c4274b5';
+export const QUESTION='What should I wear?';
+export const CURRENT='CURRENT';
+export const SELECT='SELECT';
+export const BTN_S='button__demo--small';
+export const BTN='button__demo';
+export const SUG1='Suggestion: You should wear termical cloth';
+export const SUG2='Suggestion: You should wear scarf, coat, gloves, earmuffs and closed shoes';
+export const SUG3='Suggestion: You should wear scarf and coat and maybe boots';
+export const SUG4='Suggestion: You should wear a light coat';
+export const SUG5='Suggestion: You should bring sunglasses, light cloth and lots of sunscreen';
+export const RAIN='rain';
+export const SUN='sun';
+export const CLEAR='clear';
+export const UMBRELLA=', take an umbrella';
+export const CAP=', take a cap or sunglasses';

@@ -1,9 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-//import { Route } from 'react-router-dom';
-//import { Redirect } from 'react-router';
 
-import Demo from '../components/geolocation/Demo';
+import Demo from './Demo';
 
 const serverNotes = 'http://api.openweathermap.org/data/2.5/forecast?id=596826&APPID=e5847f111e91d75487366d09345ec504';
 

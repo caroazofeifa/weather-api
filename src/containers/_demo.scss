@@ -1,6 +1,6 @@
 .navNote__image{
   height: 4rem;
-  margin: 4px;
+  margin-top: 10px;
   width: 3rem;
   z-index:1;
 }
@@ -35,11 +35,10 @@
   padding: 2rem;
 }
 .button__demo:hover {
-  background-color: lightgrey;
-  border: 3px solid gray;
+  background-color: lightblue;
 }
 input[type="radio"], input[type="checkbox"] {
-    margin: 10px 15px 10px 15px;
+    margin: 10px 10px 10px 15px;
     padding: 5px 30px 5px 5px;
 }
 .button__demo--small{
@@ -59,12 +58,21 @@ input[type="radio"], input[type="checkbox"] {
   padding: 1rem;
 }
 .button__demo--small:hover {
-  background-color: lightgrey;
-  border: 2px solid gray;
+  background-color: lightblue;
 }
 .demo{
     transition-property: width;
     transition-duration: 10s;
     transition-timing-function: linear;
     transition-delay: 1s;
+}
+.col__inline{
+    display: flex;
+    justify-content: center;
+}
+.alingn--end{
+    text-align: end;
+}
+.col--margin{
+  margin-top:5rem; 
 }
