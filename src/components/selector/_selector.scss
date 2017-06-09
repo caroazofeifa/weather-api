@@ -1,0 +1,16 @@
+.selector__input{
+  border-radius: 0px;
+  background-color: transparent;
+  border: #C9C9C9;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  outline: none;
+  -webkit-box-shadow: 0 0px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 0px 0 rgba(0,0,0,0.03) inset;
+  margin: 3rem 1rem 3rem 2rem;
+}
+.selector__input:focus{
+  border: 0px;
+  border-bottom: 3px solid gray;
+  outline: 0 none;
+}

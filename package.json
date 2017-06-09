@@ -53,6 +53,7 @@
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
     "google-map-react": "^0.24.0",
+    "google-maps-react": "^1.0.19",
     "mongoose": "^4.10.2",
     "node-sass": "^4.5.2",
     "prop-types": "^15.5.10",
@@ -60,7 +61,10 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-geolocated": "^1.0.3",
+    "react-google-map": "^3.0.1",
     "react-google-maps": "^6.3.0",
+    "react-google-maps-loader": "^2.0.2",
+    "react-googlemaps": "^0.4.0",
     "react-router": "next",
     "react-router-dom": "^4.1.1"
   }

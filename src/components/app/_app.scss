@@ -1,0 +1,133 @@
+*{ 
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;	
+}
+body {
+	width: 100%;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainView{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#clouds{
+	padding: 10px 0;
+	background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+.cloud {
+
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+	z-index:0;
+}
+.cloud:before, .cloud:after {
+	content: '';
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+.x1 {
+	animation: 40s;
+	-webkit-animation: moveclouds 150s linear infinite;
+	-moz-animation: moveclouds 150s linear infinite;
+	-o-animation: moveclouds 150s linear infinite;
+}
+.x2 {
+	animation: 40s;
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	-webkit-animation: moveclouds 120s linear infinite;
+	-moz-animation: moveclouds 120s linear infinite;
+	-o-animation: moveclouds 120s linear infinite;
+}
+.x3 {
+	animation: 40s;
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 180s linear infinite;
+	-moz-animation: moveclouds 180s linear infinite;
+	-o-animation: moveclouds 180s linear infinite;
+}
+.x4 {
+	animation: 40s;
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 148s linear infinite;
+	-moz-animation: moveclouds 148 linear infinite;
+	-o-animation: moveclouds 145s linear infinite;
+}
+.x5 {
+	animation: 40s;
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 1855s linear infinite;
+	-moz-animation: moveclouds 185s linear infinite;
+	-o-animation: moveclouds 185s linear infinite;
+}
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 100%;}
+	100% {margin-left: -100%;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 100%;}
+	100% {margin-left: -100%;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 100%;}
+	100% {margin-left: -100%;}
+}

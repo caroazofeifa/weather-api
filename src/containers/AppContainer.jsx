@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 //import { Route } from 'react-router-dom';
 //import { Redirect } from 'react-router';
+
 import Demo from '../components/geolocation/Demo';
 
 const serverNotes = 'http://api.openweathermap.org/data/2.5/forecast?id=596826&APPID=e5847f111e91d75487366d09345ec504';
@@ -30,7 +31,6 @@ class AppContainer extends React.Component {
     axios
       .get(serverNotes)
       .then(res => {
-        console.log('DATA');
         this.setState({ weather: res.data });
       });
   }
@@ -46,8 +46,7 @@ class AppContainer extends React.Component {
   render() {
     return (
       <div>
-        <div className='col-md-1 cols'>
-          <h1>You are here:</h1>
+        <div className='col-md-12'>
           <Demo
             stateApp={ this.state }
             getAllNotes={ this.getAllNotes.bind(this) }

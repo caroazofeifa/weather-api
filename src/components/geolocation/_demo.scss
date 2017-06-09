@@ -1,0 +1,44 @@
+.navNote__image{
+  height: 4rem;
+  margin: 4px;
+  width: 3rem;
+  z-index:1;
+}
+.navNote__button{
+  background-color: transparent;
+  border: 0px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-bottom: 10px; 
+  display: relative;
+  box-shadow: none;
+}
+
+.button__demo{
+  background-color: transparent;
+  border: 2px solid gray;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-bottom: 10px; 
+  display: relative;
+  box-shadow: none;
+  outline: none;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+  border-radius: 0;
+  padding: 2rem;
+}
+.button__demo:hover {
+  background-color: lightgrey;
+  border: 3px solid gray;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin: 10px 15px 10px 15px;
+    padding: 5px 30px 5px 5px;
+}
