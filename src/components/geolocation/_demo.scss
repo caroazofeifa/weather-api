@@ -42,3 +42,29 @@ input[type="radio"], input[type="checkbox"] {
     margin: 10px 15px 10px 15px;
     padding: 5px 30px 5px 5px;
 }
+.button__demo--small{
+  background-color: transparent;
+  border: 1px solid gray;
+  margin: 0px;
+  display: relative;
+  box-shadow: none;
+  outline: none;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 20.4px;
+  border-radius: 0;
+  padding: 1rem;
+}
+.button__demo--small:hover {
+  background-color: lightgrey;
+  border: 2px solid gray;
+}
+.demo{
+    transition-property: width;
+    transition-duration: 10s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}

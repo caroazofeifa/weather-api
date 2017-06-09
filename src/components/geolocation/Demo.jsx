@@ -23,6 +23,7 @@ class Demo extends React.Component {
       selectSelected:false,
       weather: [],
       place:'',
+      buttonDemo:'button__demo',
     };
     this.updateCoords = this.updateCoords.bind(this);
     this.handleClick = this.handleClick.bind(this);
@@ -75,10 +76,12 @@ class Demo extends React.Component {
     if(event.target.value =='CURRENT' ) {
       this.setState({ selectSelected: false });
       this.setState({ currentSelected: true });
+      this.setState({ buttonDemo: 'button__demo' });
     } else {
         if(event.target.value =='SELECT' ) {
           this.setState({ selectSelected: true });
           this.setState({ currentSelected: false });
+          this.setState({ buttonDemo: 'button__demo--small' });
         }
     }
     this.setState({ place: '' });
@@ -100,7 +103,7 @@ class Demo extends React.Component {
             )
         : <div>Getting the location data&hellip; </div>;
     return (
-      <div>
+      <div className='demo'>
         {/*<h2> { this.state.latitudeD } </h2>
         <h2> { this.state.longitudeD } </h2>*/}
         <div className='row'>
@@ -122,7 +125,7 @@ class Demo extends React.Component {
           </div>
         </div>
         <div className='row'>
-          <button className='button__demo' href='#' onClick={ this.updateCoords } > How is the weather? </button>
+          <button className={this.state.buttonDemo} href='#' onClick={ this.updateCoords } > How is the weather? </button>
         </div>
         <div className='row'>
           <div className='col-md-12'>
